@@ -1,8 +1,9 @@
 version: "3.8"
 
 services:
-  myapp:
+  logger:
     build: .
+    container_name: kotlin_logger
     environment:
       LOG_PATH_CONTAINER: ${LOG_PATH_CONTAINER}
     volumes:
